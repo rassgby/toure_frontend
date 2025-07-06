@@ -31,7 +31,7 @@ interface DashboardData {
 
 export function useDashboard(userRole: string): DashboardData {
   const [metrics, setMetrics] = useState<DashboardMetrics>({})
-  const [activities, setActivities] = useState([])
+  const [activities, setActivities] = useState<any[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 

@@ -1,4 +1,4 @@
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5001/api"
+const API_BASE_URL = "https://toure-backend.onrender.com/api"
 
 class ApiService {
   private token: string | null = null
